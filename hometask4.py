@@ -1,9 +1,30 @@
 def find(greek_alphabet, x) -> int:
-    """ищет элементы в списке греческого алфавита и возвращает индекс"""
+    """ищет элемент в списк и возвращает индекс"""
     for i, item in enumerate(greek_alphabet):
         if item == x:
             return i
 
+    return -1
+
+def find(greek_alphabet, y) -> int:
+    """ищет элемент в списке и возвращает индекс"""
+    for i, item in enumerate(greek_alphabet):
+        if item == y:
+            return i
+
+    return -1
+def greek_comparator(x, y) -> int:
+    # a = position letter x in alphabet
+    # b = position letter y in alphabet
+    a = find(greek_alphabet, x)
+    b = find(greek_alphabet, y)
+
+    if a == b:
+        return 0
+    if a > b:
+        return 1
+    if a < b:
+        return -1
 
 greek_alphabet = (
     "alpha",
@@ -32,19 +53,6 @@ greek_alphabet = (
     "omega",
 )
 
-find(greek_alphabet, "alpha")  # -> 0
-find(greek_alphabet, "beta")  # -> 1
-find(greek_alphabet, "eta")  # -> 6
-    # a = position letter x in alphabet
-    # b = position letter y in alphabet
-a = find(greek_alphabet, "omicron")
-b = find(greek_alphabet, "omega")
-
-def greek_comparator(a, b) -> int:
-    """сравнивает a и b, если равны возвращает 0, если a > b возвращает 1, если a < b возвращает -1"""
-    if a == b:
-        return 0
-    if a > b:
-        return 1
-    if a < b:
-        return -1
+r1 = greek_comparator("alpha", "beta")
+r2 = greek_comparator("alpha", "omega")
+r3 = greek_comparator("gamma", "omega")
