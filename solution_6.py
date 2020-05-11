@@ -5,9 +5,9 @@
 >>> monkey_job(-5) == []
 """
 
-def monkey_job (n):
-    x = list(range(1, n + 1))
-    return x
+def monkey_job(n):
+    """Функция которая принимает число и возращает список от 1 до n"""
+    return list(range(1, n + 1))
 
 
 print(monkey_job(3))

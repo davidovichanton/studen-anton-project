@@ -1,4 +1,8 @@
 def monkey_count(n) -> int:
+    """
+Функцию которая принимает целое число n и возвращает сумму
+чисел от 1..n
+    """
     result = 0
     for x in range(1, n + 1):  # [1]
         result = result + x

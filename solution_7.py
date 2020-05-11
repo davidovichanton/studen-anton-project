@@ -10,6 +10,7 @@ from typing import List
 
 
 def max(l):
+    """Функция находит максимальное число переданное ей """
     m = float("-inf")
     for i in l:
         if i > m:
@@ -18,4 +19,4 @@ def max(l):
 
 l = [-5, 4, 10]
 m = max(l)
-print m
+print (m)
