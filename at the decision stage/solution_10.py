@@ -9,11 +9,11 @@ from typing import List
 def unique_symbols_with_count(s):
     seen = []
     for i in s:
-        if i is not seen:
+        if i not in seen:
             senn.append(i)
-            return seen
+        return seen
 
 
-print(unique_symbols_with_count("aaab"))    
+print(unique_symbols_with_count("aaab"))
 
 посмотреть как работает #break и continue
