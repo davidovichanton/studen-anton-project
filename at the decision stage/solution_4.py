@@ -13,6 +13,7 @@ def find(greek_alphabet, y) -> int:
             return i
 
     return -1
+
 def greek_comparator(x, y) -> int:
     # a = position letter x in alphabet
     # b = position letter y in alphabet

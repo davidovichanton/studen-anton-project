@@ -1,6 +1,6 @@
 def find(l, x):
     for i, item in enumerate(l):
-        if item == x:
+        if item == i:
             return i
 
     return -1
