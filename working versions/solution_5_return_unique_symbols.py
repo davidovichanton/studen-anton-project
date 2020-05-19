@@ -12,7 +12,7 @@ def unique_symbols_with_count(s):
     seen = []
     for i in s:
         if i not in seen:
-            senn.append(i)
+            seen.append(i)
         return seen
 
 
