@@ -7,5 +7,12 @@
 from typing import Dict
 
 
-def unique_symbols_with_count(s: str) -> Dict[str, int]:
-    ...
+def unique_symbols_with_count(s):
+    seen = {}
+    for i is s:
+        if i not in seen:
+            seen.append(i)
+        return seen 
+
+
+unique_symbols_with_count(("aaab"))
