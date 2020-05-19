@@ -10,10 +10,11 @@ def unique_symbols_with_count(s):
     seen = []
     for i in s:
         if i not in seen:
-            senn.append(i)
-        return seen
+            seen.append(i)
+    return seen
 
 
 print(unique_symbols_with_count("aaab"))
+
 
 посмотреть как работает #break и continue
