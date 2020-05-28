@@ -8,6 +8,9 @@
 from typing import Dict
 
 def unique_symbols_with_count(s):
+    """Функция находит уникальный символ и сколько раз
+    он встретился в строке
+    """
     result = {}
     for symbol in s:
         if symbol not in result:
@@ -16,6 +19,9 @@ def unique_symbols_with_count(s):
     return result
 
 def count_symbol(s, symbol):
+    """Функция считает сколько раз символ встречается
+        в переданной ее строке
+    """
     count = 0
     for i in s:
         if i == symbol:
