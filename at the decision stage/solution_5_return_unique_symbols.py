@@ -18,3 +18,5 @@ print(unique_symbols_with_count("aaab"))
 
 
 посмотреть как работает #break и continue
+
+ # сделать find  чтобы возращала true либо false 

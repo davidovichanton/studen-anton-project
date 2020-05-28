@@ -1,13 +1,27 @@
 """
-Написать функцию которая принимает целое число n и отдает список и чисел 1..n
->>> monkey_job(3) == [1, 2, 3]
->>> monkey_job(1) == [1]
->>> monkey_job(-5) == []
+Написать функцию которая принимает строку и возвращает количество уникальные
+символы в этой строке и их количество
+>>> unique_symbols_with_count("aaab") == {"a": 3, "b": 1}
+>>> unique_symbols_with_count("abc") == {"a": 1, "b": 1, "c": 1}
 """
 
-def monkey_job(n):
-    """Функция которая принимает число и возращает список от 1 до n"""
-    return list(range(1, n + 1))
+from typing import Dict
 
+def unique_symbols_with_count(s):
+    result = {}
+    for symbol in s:
+        if symbol not in result:
+            count = count_symbol(s, symbol)
+            result[symbol] = count
+    return result
 
-print(monkey_job(3))
+def count_symbol(s, symbol):
+    count = 0
+    for i in s:
+        if i == symbol:
+            count += 1
+
+    return count
+
+print(unique_symbols_with_count("aaabb"))
+print(unique_symbols_with_count("acccc"))
