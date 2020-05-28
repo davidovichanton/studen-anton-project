@@ -13,7 +13,7 @@ def unique_symbols_with_count(s):
     for i in s:
         if i not in seen:
             seen.append(i)
-        return seen
+    return seen
 
 
 print(unique_symbols_with_count("aaab"))
