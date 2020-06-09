@@ -14,15 +14,11 @@ from typing import List, Any
 def inner_join(l1, l2):
     result = []
     for i1 in l1:
-        if find(l2, i1) != -1:
+        if find(l2, i1):
             result.append(i1)
     return result
 
 def find(l, x):
-    for i, item in enumerate(l):
-        if item == x:
-            return i
-
-    return -1
+    return x in l
 
 print(inner_join([1, 2, 3], [2, 3, 4]))
